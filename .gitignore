@@ -1,0 +1,56 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing & Coverage
+/coverage
+
+# Next.js build output
+/.next/
+/out/
+
+# Production build output
+/build
+dist/
+mcp-server/dist/
+
+# Misc & OS files
+.DS_Store
+Thumbs.db
+*.pem
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment and secrets (strictly ignored)
+.env*
+*.env
+*.env.*
+*.local
+!.env.example
+!.env.local.example
+!mcp-server/.env.example
+
+# Supabase CLI local link / session state
+supabase/.temp/
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE / Editor
+.vscode/
+.idea/
